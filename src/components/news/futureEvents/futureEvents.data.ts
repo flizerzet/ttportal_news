@@ -1,0 +1,42 @@
+export const events = [
+  {
+    id: "a1b2c3d4-e5f6-4a7b-8c9d-0e1f2a3b4c5d",
+    title: "Корпоративный пикник",
+    timestamp: "2023-06-15T12:00:00",
+    location: "Парк культуры и отдыха, зона BBQ",
+    isFullDay: false,
+    type: "party",
+  },
+  {
+    id: "b2c3d4e5-f6g7-5b8c-9d0e-1f2a3b4c5d6e",
+    title: "Обучение новым технологиям",
+    timestamp: "2023-06-20T09:30:00",
+    location: "Офис, конференц-зал 3 этаж",
+    isFullDay: true,
+    type: "educational",
+  },
+  {
+    id: "c3d4e5f6-g7h8-6c9d-0e1f-2a3b4c5d6e7f",
+    title: "Встреча с партнёрами",
+    timestamp: "2023-06-22T15:00:00",
+    location: "Ресторан 'Гранд', VIP-зал",
+    isFullDay: false,
+    type: "other",
+  },
+  {
+    id: "d4e5f6g7-h8i9-7d0e-1f2a-3b4c5d6e7f8g",
+    title: "Тимбилдинг",
+    timestamp: "2023-06-25T10:00:00",
+    location: "Загородный клуб 'Экстрим'",
+    isFullDay: true,
+    type: "party",
+  },
+  {
+    id: "e5f6g7h8-i9j0-8e1f-2a3b-4c5d6e7f8g9h",
+    title: "Мастер-класс по управлению проектами",
+    timestamp: "2023-06-28T11:00:00",
+    location: "Коворкинг 'Рабочая станция'",
+    isFullDay: false,
+    type: "educational",
+  },
+];

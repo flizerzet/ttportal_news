@@ -1,0 +1,37 @@
+@import "tailwindcss";
+:root {
+	--brand-red: #e30613;
+}
+@layer utilities {
+	.text-overflow-3-lines {
+		display: -webkit-box;
+		-webkit-line-clamp: 3;
+		line-clamp: 3;
+		-webkit-box-orient: vertical;
+		text-overflow: ellipsis;
+		overflow: hidden;
+	}
+	.brand-red-bg {
+		background-color: var(--brand-red);
+	}
+	.brand-red-text {
+		color: var(--brand-red);
+	}
+	.hover-transition {
+		transition: all 0.2s;
+	}
+	@media (any-hover: hover) {
+		.hover-brand-red-text:hover {
+			color: var(--brand-red);
+		}
+	}
+}
+
+@theme {
+	--breakpoint-xs: 20rem;
+	--breakpoint-sm: 30rem;
+	--breakpoint-md: 48rem;
+	--breakpoint-lg: 64rem;
+	--breakpoint-xl: 75rem;
+	--breakpoint-xxl: 87rem;
+}
