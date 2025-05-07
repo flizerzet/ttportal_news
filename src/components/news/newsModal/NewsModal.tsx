@@ -12,7 +12,7 @@ import { useState, useEffect } from "react";
 interface NewsModalProps {
   modalTitle: string;
   newsContent?: INews | null;
-  onSubmit: (data: INews) => void;
+  onSubmit?: (data: INews) => void;
 }
 
 export const NewsModal = ({
@@ -76,7 +76,7 @@ export const NewsModal = ({
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    onSubmit(formData);
+    onSubmit!(formData);
     toggleModal();
   };
 

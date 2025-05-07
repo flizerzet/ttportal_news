@@ -45,7 +45,7 @@ export const NewsFilter = ({
 
   return (
     <>
-      <div className="flex space-x-6 border-b border-gray-200 mb-6 overflow-scroll w-screen pb-2 md:pb-0">
+      <div className="flex space-x-6 border-b border-gray-200 mb-6 overflow-scroll md:w-full w-[calc(100vw-64px)] pb-2 md:pb-0">
         {newsCategories.map((e) => {
           if (e.category == activeCategory) {
             return (
@@ -75,17 +75,17 @@ export const NewsFilter = ({
         {filteredNews.map((e, idx) => {
           if (idx == 0) {
             return (
-              <div className="h-full">
+              <div key={e.id} className="h-full">
                 <div className="xl:flex hidden h-full">
                   <NewsItem
                     key={e.id}
                     title={e.title}
-                    label={e.label}
+                    label={e.label!}
                     category={e.category}
                     timestamp={e.timestamp}
                     text={e.text}
-                    author={e.author}
-                    author_avatar={e.author_avatar}
+                    author={e.author!}
+                    author_avatar={e.author_avatar!}
                     thumb={e.thumb}
                     layout={"vertical"}
                     categoryTag={e.category_tag}
@@ -97,12 +97,12 @@ export const NewsFilter = ({
                   <NewsItem
                     key={e.id}
                     title={e.title}
-                    label={e.label}
+                    label={e.label!}
                     category={e.category}
                     timestamp={e.timestamp}
                     text={e.text}
-                    author={e.author}
-                    author_avatar={e.author_avatar}
+                    author={e.author!}
+                    author_avatar={e.author_avatar!}
                     thumb={e.thumb}
                     layout={"vertical no-user"}
                     categoryTag={e.category_tag}
@@ -117,12 +117,12 @@ export const NewsFilter = ({
               <NewsItem
                 key={e.id}
                 title={e.title}
-                label={e.label}
+                label={e.label!}
                 category={e.category}
                 timestamp={e.timestamp}
                 text={e.text}
-                author={e.author}
-                author_avatar={e.author_avatar}
+                author={e.author!}
+                author_avatar={e.author_avatar!}
                 thumb={e.thumb}
                 layout={"vertical no-user"}
                 categoryTag={e.category_tag}
@@ -139,8 +139,8 @@ export const NewsFilter = ({
                 category={e.category}
                 timestamp={e.timestamp}
                 text={e.text}
-                author={e.author}
-                author_avatar={e.author_avatar}
+                author={e.author!}
+                author_avatar={e.author_avatar!}
                 thumb={e.thumb}
                 layout={"horizontal"}
                 categoryTag={e.category_tag}

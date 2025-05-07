@@ -1,6 +1,8 @@
 .aside_opened {
-	transform: translateX(0);
-	position: absolute;
+	@media (max-width: 48rem) {
+		transform: translateX(0);
+		position: absolute;
+	}
 }
 
 .aside_closed {

@@ -10,7 +10,7 @@ export const DateInput = ({ initialDate, onDateChange }: DateInputProps) => {
     return today.toISOString().split("T")[0]; // Формат 'YYYY-MM-DD'
   });
 
-  const handleDateChange = (e) => {
+  const handleDateChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const today = initialDate ? new Date(initialDate) : new Date();
     const newDate = e.target.value;
     onDateChange(today.toISOString().split("T")[0]);

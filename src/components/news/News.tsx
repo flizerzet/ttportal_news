@@ -12,15 +12,15 @@ import { useState } from "react";
 import { newsCategories, news } from "./news.data";
 
 export interface INews {
-  id: number;
+  id?: number;
   title: string;
-  label: string;
+  label?: string;
   category: string;
   category_tag: string;
   timestamp: string;
   text: string;
-  author: string;
-  author_avatar: string;
+  author?: string;
+  author_avatar?: string;
   thumb: string;
 }
 
